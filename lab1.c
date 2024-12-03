@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define TAMANO 9  // Definir el tamaño del arreglo como 9
+#define TAMANO 9  
 
 int nums[TAMANO] = {1, 1, 2, 2, 3, 3, 4, 5, 5};  // Arreglo global
 
@@ -19,7 +19,7 @@ int remover() {
 }
 
 int main() {
-    int tamano = TAMANO;  // Definir el tamaño del arreglo en la función principal
+    int tamano = TAMANO; 
     
     // Imprime el arreglo original
     printf("Arreglo original: ");
@@ -30,12 +30,11 @@ int main() {
     
     // Llama a la función remover y obtiene el nuevo tamaño
     int k = remover();  
-    // Imprime el arreglo sin duplicados
     printf("Arreglo sin duplicados: ");
     for (int i = 0; i < k; i++) {  // Imprime el arreglo sin duplicados
         printf("%d ", nums[i]);
     }
     printf("\nNumero de elementos en k: %d\n", k);
 
-    return 0;  // Retorna 0 para indicar que el programa terminó correctamente
+    return 0; 
 }
