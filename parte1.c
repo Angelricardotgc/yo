@@ -52,17 +52,17 @@ int main(){
             puntos[i] = generar();  // Genera puntos aleatorios y los almacena en el arreglo
         }
 
-        punto p1, p2;  // Puntos más cercanos
-        double dismin;  // Distancia mínima
+        punto p1, p2; 
+        double dismin; 
         clock_t inicio = clock();  // Registra el tiempo de inicio
         puntocer(puntos, n[k], &p1, &p2, &dismin);  // Llama a la función para encontrar los puntos más cercanos
         clock_t fin = clock();  // Registra el tiempo de fin
         double tiempoeje = (double)(fin - inicio) / CLOCKS_PER_SEC;  // Calcula el tiempo de ejecución en segundos
-        printf("Los puntos más cercanos son: (%.2f, %.2f) y (%.2f, %.2f)\n", p1.x, p1.y, p2.x, p2.y);  // Imprime los puntos más cercanos
-        printf("Distancia mínima: %.6f\n", dismin);  // Imprime la distancia mínima entre los puntos
-        printf("Tiempo de ejecución: %.6f segundos\n\n", tiempoeje);  // Imprime el tiempo de ejecución
+        printf("Los puntos más cercanos son: (%.2f, %.2f) y (%.2f, %.2f)\n", p1.x, p1.y, p2.x, p2.y);  
+        printf("Distancia mínima: %.6f\n", dismin); 
+        printf("Tiempo de ejecución: %.6f segundos\n\n", tiempoeje);  
         
-        free(puntos);  // Libera la memoria asignada para el arreglo de puntos
+        free(puntos); 
     }
-    return 33;  // Retorna un valor indicando que el programa terminó correctamente
+    return 33; 
 }
